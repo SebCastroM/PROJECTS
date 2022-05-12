@@ -30,3 +30,19 @@ caja.push(new Billete(10, 6));
 
 ### [TransferEmulator](https://sebcastrom.github.io/PROJECTS/JS/Transfer%20Emulator/)
 >.TODO
+
+<h2>
+<abbr title="Cascading Style Sheet">CSS</abbr> Projects
+</h2>
+
+### [Profile Card](https://sebcastrom.github.io/PROJECTS/CSS/Card/)
+>Little project did with an emphasis on CSS code, doing my first steps with this language, i applied topics as:
+* Positioning
+* Properties
+* Box model
+* Layout
+* Displays
+* Flexbox
+* CSS Grid
+* Specificity
+* Selectors
