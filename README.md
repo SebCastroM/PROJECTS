@@ -46,3 +46,5 @@ caja.push(new Billete(10, 6));
 * CSS Grid
 * Specificity
 * Selectors
+* Pseudoclasses
+* Pseudoelements
