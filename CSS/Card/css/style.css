@@ -3,16 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+*::selection{
+    background:white;
+}
 body {
-    background: #ffffff;
+    background: linear-gradient(to top left, #555f8b 0%, #50517e 0%, #a7a9b6 90%);
     font-family: sans-serif;
     color: whitesmoke; 
 }
 section{
+    min-height: 100vh;
     display: grid;
-    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
+}
+section div{
+    overflow: hidden;
+}
+h2:hover{
+    text-decoration:underline;
+}
+.info2>h2:hover{
+    font-size:xx-large;
+}
+a:hover::before{
+    content: "*";
 }
 .card1{
     /* display: flex; */
@@ -23,11 +39,7 @@ section{
     background: linear-gradient(145deg, #c6c9d8, #a7a9b6);
     box-shadow:  9px 9px 15px #5e6067,
                  -9px -9px 15px #ffffff;
-    overflow: hidden;
     position: relative;
-    top: 90px;
-    margin-left: auto;
-    margin-right: auto;
 }
 .card1 .main {
     width: 168%;
@@ -52,7 +64,7 @@ div .info {
     font-size: 15px;
 }
 .card2{
-    display: flex;
+    /* display: flex; */
     /* justify-content: center; */
     width: 250px;
     height: 500px;
@@ -60,11 +72,7 @@ div .info {
     background: #555f8b;
     box-shadow:  11px 11px 35px #3b4260,
                  -11px -11px 35px #6f7cb6;
-    overflow: hidden;
     position: relative;
-    top: 90px;
-    margin-left: auto;
-    margin-right: auto;
 }
 .card2 .main2 {
     width: 100%;
