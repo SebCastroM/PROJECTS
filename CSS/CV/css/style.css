@@ -4,104 +4,69 @@
     box-sizing: border-box;
     font-family:'Calibri';
 }
-.container{
-    border: 5px solid #17202A;
-    min-height: 100vh;
-    display: grid;
-    margin: 0%;
-    padding: 0%;
-    grid-template-columns: 35% 65%;
-}
 p{
     text-align: justify;
 }
-.links a{
-    color: white;
+.container{
+    border: 5px solid #17202A;
+    margin: 0%;
+    padding: 0%;
 }
-#studies a{
-    color:#34495E;
+
+.header h1{
+    text-align: center;
 }
-#info{
-    display: grid;
-    grid-template-rows: 30% 60% 10%;
-    padding: 10px;
+.header img{
+    border: 3px solid white;
+    width: 50%;
+    top: 15px;
+    margin-left: 25%;
+}
+.radius{
+    border-radius: 100%;
+}
+.info{
     background: #34495E;
     color: white;
     border-right: 5px solid #17202A;
 }
-.header{
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-}
-.header #imagen{
-    position: absolute;
-    border: 3px solid white;
-    width: 35%;
-    border-radius: 100%;
-}
-.header #nombre{
-    position: absolute;
-    text-align: center;
-    top: 85%;
-}
 .content{
-    margin-top: 10px;
     border-left: 3px solid white;
     padding: 5px;
-}
-.links{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
+    }
 .contact{
     font-size: smaller;
 }
 .contact div p{
     text-align: center;
 }
-#main{
-    display: grid;
-    grid-template-rows: 65% 35%;
-    position: relative;
-    color: #34495E;
+.links a{
+    color: white;
 }
-#main img{
+.main{
+    color:#17202A;
+    position: relative;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+}
+.main img{
     position: absolute;
     height: 100%;
     width: 100%;
-    opacity: 0.2;
+    opacity: 0.5;
     z-index: -1;
+    top: 0%;
 }
-.history{
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-.history div{
-    padding: 10px;
+.main a{
+    color:#17202A;
 }
 #experience{
     font-size:medium;
 }
-#experience h3 a{
-    color: #34495E;
-}
 #experience p{
     font-size: smaller;
 }
-.extra{
-    display: grid;
-    grid-template-rows: 20% 80%;
-}
-.extra div{
-    padding: 5px;
-}
 .title{
     text-align: center;
-    margin-top: 10px;
-}
-.skills{
-    display: grid;
-    grid-template-columns: 50% 50%;
 }
