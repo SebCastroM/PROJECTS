@@ -1,7 +1,14 @@
 * {
+    margin: 0;
+    padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: chocolate;
-    background-color: bisque;
-    border-color: brown;
+    color: rgb(0, 255, 221);
+    border-color: rgb(0, 255, 221) ;
     text-align: center;
+    background-color: transparent;
 }
+body {
+    min-height: 100vh;
+    background: linear-gradient(0deg, rgb(34, 163, 195) 0%, rgb(117, 86, 19) 100%);
+}
+
