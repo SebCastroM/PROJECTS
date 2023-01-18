@@ -1,16 +1,14 @@
 // 1 es piedra, 2 es papel y 3 es tijera
 let nombre = prompt ("Nombre del jugador:")
-let board = document.getElementById("dashboard")
-const jugar = document.getElementById("boton");
-let opcionJugador1 = document.getElementById("opcionJugador")
+const rock = document.getElementById("bRock")
+const papper = document.getElementById("bPapper")
+const scissor = document.getElementById("bScissor")
+let board = document.getElementById("score")
 let PC = 0
-let rJugador = 0
+let rJugador = 0 
 let rPC = 0
-jugar.addEventListener("click", resultado);
-
-function resultado() {
+function jugar(opcion) {
     PC = Math.floor(Math.random()*(3 - 1 + 1))+1
-
     if (PC == 1){
         alert ('PC saco Piedra')
     } else if (PC == 2){
@@ -18,11 +16,9 @@ function resultado() {
     } else if (PC == 3){
         alert ('PC saco Tijera')
     }
-    if (opcionJugador1.value == "") {
-        alert('INGRESE UNA OPCION')
-    } else if (opcionJugador1.value == PC) {
+    if (opcion == PC) {
         alert('EMPATE')
-    } else if((opcionJugador1.value == 1 && PC == 3) || (opcionJugador1.value == 2 && PC == 1) || (opcionJugador1.value == 3 && PC == 2)) {
+    } else if((opcion == 1 && PC == 3) || (opcion == 2 && PC == 1) || (opcion == 3 && PC == 2)) {
         alert('GANASTE')
         rJugador += 1
     } else {
@@ -30,4 +26,8 @@ function resultado() {
         rPC += 1 
     }
     board.innerHTML = nombre + ": " + rJugador + " - PC: " + rPC
+    return rJugador, rPC
 }
+rock.addEventListener("click", ()=> jugar(1))
+papper.addEventListener("click", ()=> jugar(2))
+scissor.addEventListener("click", ()=> jugar(3))
