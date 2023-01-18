@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
-</head>
-<body>
-    <h1>JUEGA PIEDRA, PAPEL O TIJERA</h1> 
-   <br>
-   <br>
-   <h2>1...2...3...</h2>
-   <h3>PIEDRA...PAPEL...O TIJERA!!</h3>
-   <br>
-   <br>
-   <p><select id="opcionJugador" name=" ">
-    <option></option>
-    <option value="1">PIEDRA ✊</option>
-    <option value="2">PAPEL ✋</option>
-    <option value="3">TIJERA ✌</option>
-    </select>
-    <br>
-    <br>
-    <input type="button" id="boton" value="Jugar"></p>
-   <div id="dashboard"></div>
-</body>
-<script src="piedraPapelTijera.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <section>
+            <div class="title">
+                <h1>JUEGA PIEDRA, PAPEL O TIJERA</h1> 
+                <h2>1...2...3...</h2>
+                <h3>PIEDRA...PAPEL...O TIJERA!!</h3>
+            </div>
+            <div class="gamePanel">
+                <div class="menu">
+                    <input type="button" class="item" id="bRock" value="PIEDRA ✊🏽">   
+                    <input type="button" class="item" id="bPapper" value="PAPEL ✋🏽">
+                    <input type="button" class="item" id="bScissor" value="TIJERA ✌🏽">    
+                </div>
+                <div class="dashboard">
+                    <p>Marcador:</p>
+                    <div id="score"></div>
+                </div>
+            </div>
+        </section>  
+    </body>
+    <script src="piedraPapelTijera.js"></script>
 </html>
