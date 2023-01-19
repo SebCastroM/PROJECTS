@@ -9,21 +9,32 @@ let rJugador = 0
 let rPC = 0
 function jugar(opcion) {
     PC = Math.floor(Math.random()*(3 - 1 + 1))+1
-    if (PC == 1){
-        alert ('PC saco Piedra')
-    } else if (PC == 2){
-        alert ('PC saco Papel')
-    } else if (PC == 3){
-        alert ('PC saco Tijera')
+
+    function cambiarNumAObjeto(numero) {
+        switch (numero){
+            case 1:
+                return "Piedra"
+            case 2:
+                return "Papel"
+            case 3:
+                return "Tijera"
+        }
     }
+
     if (opcion == PC) {
-        alert('EMPATE')
+        let usuarioF = cambiarNumAObjeto(opcion)
+        let pcF = cambiarNumAObjeto(PC)
+        swal.fire ("EMPATE ._.","Elegiste: " + usuarioF + " y PC eligio: " + pcF, "question")
     } else if((opcion == 1 && PC == 3) || (opcion == 2 && PC == 1) || (opcion == 3 && PC == 2)) {
-        alert('GANASTE')
+        let usuarioF = cambiarNumAObjeto(opcion)
+        let pcF = cambiarNumAObjeto(PC)
+        swal.fire ("GANASTE :)","Elegiste: " + usuarioF + " y PC eligio: " + pcF, "success")
         rJugador++
     } else {
-        alert('PERDISTE')
-        rPC++ 
+        let usuarioF = cambiarNumAObjeto(opcion)
+        let pcF = cambiarNumAObjeto(PC)
+        swal.fire ("PERDISTE :(","Elegiste: " + usuarioF + " y PC eligio: " + pcF, "error")
+        rPC++
     }
     board.innerHTML = nombre + ": " + rJugador + " - PC: " + rPC
     return rJugador, rPC
