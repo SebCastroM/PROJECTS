@@ -1,8 +1,8 @@
 // 1 es piedra, 2 es papel y 3 es tijera
 let nombre = prompt ("Nombre del jugador:")
 const rock = document.getElementById("bRock")
-const papper = document.getElementById("bPapper")
-const scissor = document.getElementById("bScissor")
+const paper = document.getElementById("bPaper")
+const scissors = document.getElementById("bScissors")
 let board = document.getElementById("score")
 let PC = 0
 let rJugador = 0 
@@ -40,5 +40,5 @@ function jugar(opcion) {
     return rJugador, rPC
 }
 rock.addEventListener("click", ()=> jugar(1))
-papper.addEventListener("click", ()=> jugar(2))
-scissor.addEventListener("click", ()=> jugar(3))
+paper.addEventListener("click", ()=> jugar(2))
+scissors.addEventListener("click", ()=> jugar(3))

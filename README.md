@@ -19,6 +19,9 @@ caja.push(new Billete(10, 6));
 ````
 >The withdraw doesn´t work if you writte an amount that ends with a value minor than 10, ex -21-5-315- cause the denomination of the bills is -100-50-20-10-
 
+### [Rock, Paper... Scissors](https://sebcastrom.github.io/PROJECTS/JS/rockPapperScissors/)
+>Page that works like the game rock paper scissors, you only have to put your name when opening the link and then just choose between the three options. The dashboard will update the score automatically. 
+
 ### [Random numbers generator](https://sebcastrom.github.io/PROJECTS/JS/randomNumbers/)
 >Code to generate random numbers, you can choose the quantity of numbers will be generated and the range they are in.
 
