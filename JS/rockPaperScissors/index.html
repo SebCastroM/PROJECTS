@@ -5,28 +5,30 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
         <title>Rock, Paper, Scissors</title>
     </head>
     <body>
         <section>
             <div class="title">
                 <h1>JUEGA PIEDRA, PAPEL O TIJERA</h1> 
-                <h2>1...2...3...</h2>
                 <h3>PIEDRA...PAPEL...O TIJERA!!</h3>
             </div>
             <div class="gamePanel">
                 <div class="menu">
-                    <input type="button" class="item" id="bRock" value="PIEDRA ✊🏽">   
-                    <input type="button" class="item" id="bPaper" value="PAPEL ✋🏽">
-                    <input type="button" class="item" id="bScissors" value="TIJERA ✌🏽">    
+                    <button class="item" id="bRock">PIEDRA ✊🏽</button>  
+                    <button class="item" id="bPaper">PAPEL ✋🏽</button>
+                    <button class="item" id="bScissors">TIJERA ✌🏽</button>   
                 </div>
                 <div class="dashboard">
-                    <p>Marcador:</p>
-                    <div id="score"></div>
+                    <div class="dashboard1">
+                        <p>Marcador:</p>
+                        <div id="score"></div>  
+                    </div>    
                 </div>
             </div>
         </section>  
-    </body>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="piedraPapelTijera.js"></script>
+    </body>
 </html>

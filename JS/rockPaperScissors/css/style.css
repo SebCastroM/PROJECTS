@@ -1,20 +1,26 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #ffffff;
-    border-color: rgb(230, 227, 89) ;
+    font-family: 'Quicksand', sans-serif;
+    color: #ffffff;   
     text-align: center;
-    background-color: transparent;
 }
 body {
     min-height: 100vh;
-    background: linear-gradient(0deg, rgb(99, 111, 114) 0%, rgb(165, 140, 87) 100%);
+    background: linear-gradient(0deg, #5D8B84 0%, #B69AB0 100%);
 }
 section { 
     min-height: 100vh;
     display: grid;
     grid-template-rows: 20% 80%;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bolder;
 }
 .gamePanel {
     display: grid;
@@ -25,6 +31,11 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: x-large;
+    font-weight: bolder;
+}
+.dashboard1 {
+    border-color: #ffffff;
 }
 .menu {
     display: flex;
@@ -33,6 +44,14 @@ section {
     align-items: center;
 }
 .item {
-    width: 100px;
-    height: 100px;
+    width: 230px;
+    height: 20%;
+    font-size: x-large;
+    font-weight: bolder;
+    border-radius: 40%;
+    border-color: #ffffff;
+    background: transparent;
+}
+.item:hover {
+    opacity: 0.4;
 }
